@@ -41,3 +41,6 @@ multiply <- function(x, y) {
 }
 result <- multiply(4, 6)
 print(result)
+
+# Code
+print("Hello World!")
