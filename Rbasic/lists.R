@@ -1,5 +1,15 @@
 #Lists
 
+empId = c(1, 2, 3, 4)
+
+empName = c("Ajit", "kumar", "dinesh", "venkat")
+
+numberOfEmp = 4
+
+empList = list(empId, empName, numberOfEmp)
+
+print(empList)
+
 #list of character
 fruits <- list("apple", "banana", "orange")
 fruits
@@ -35,3 +45,5 @@ nums2
 #combine lists
 new_list <- c(nums1, nums2)
 new_list
+
+
