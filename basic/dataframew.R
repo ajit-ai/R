@@ -132,12 +132,17 @@ colnames(Products)[ncol(Products)] <- "Discount"
 cat("\nUpdated dataframe after adding a new column 'Discount':\n")
 print(Products)
 
-library(dplyr)
+if (requireNamespace("dplyr", quietly = TRUE)) {
+  library(dplyr)
+} else {
+  message("dplyr not installed - using base subset fallback")
+}
 
 data <- data.frame(
   friend_id = c(1, 2, 3, 4, 5),
   friend_name = c("Sachin", "Sourav", "Dravid", "Sehwag", "Dhoni"),
-  location = c("Kolkata", "Delhi", "Bangalore", "Hyderabad", "Chennai")
+  location = c("Kolkata", "Delhi", "Bangalore", "Hyderabad", "Chennai"),
+  stringsAsFactors = FALSE
 )
 
 print(data)

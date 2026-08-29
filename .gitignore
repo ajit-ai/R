@@ -1,1 +1,15 @@
 *.idea
+# R generated files
+*.RData
+*.Rhistory
+.Rproj.user
+*.png
+*.pdf
+!readme.pdf
+# Temp test outputs
+test_output.csv
+test_data.rds
+test_workspace.RData
+# OS
+.DS_Store
+Thumbs.db
